@@ -1,0 +1,313 @@
+{
+  "$comment": "Bundled Hebrew ruleset. Copy to ~/.claude/recap.config.json (or run scripts/use-language.sh) to customise without losing it on update.",
+  "language": {
+    "name": "Hebrew",
+    "script": "hebrew",
+    "minRatio": 0.5,
+    "minLetters": 40
+  },
+  "requireBoldHeadings": true,
+  "titles": [
+    "במילים פשוטות",
+    "בפשטות",
+    "בשפה פשוטה"
+  ],
+  "beats": [
+    {
+      "key": "changed",
+      "title": "מה השתנה",
+      "labels": [
+        "מה השתנה",
+        "מה שיניתי",
+        "מה עשיתי",
+        "מה עשינו",
+        "מה נעשה",
+        "מה ביצעתי",
+        "מה מצאתי",
+        "מה נמצא"
+      ],
+      "covers": "each important change on its own line: what changed, where, and why. Names are fine when you say what the thing does."
+    },
+    {
+      "key": "verified",
+      "title": "איך בדקתי ומה יצא",
+      "labels": [
+        "איך בדקתי ומה יצא",
+        "איך בדקתי",
+        "מה בדקתי",
+        "איך זה נבדק",
+        "מה נבדק",
+        "איך וידאתי"
+      ],
+      "covers": "what each check makes sure of, and the real numbers (how many ran, passed, failed). If nothing was checked, say so and why."
+    },
+    {
+      "key": "open",
+      "title": "מה עוד לא סגור",
+      "labels": [
+        "מה עוד לא סגור",
+        "מה לא סגור",
+        "מה עוד פתוח",
+        "מה נשאר פתוח",
+        "מה פתוח",
+        "מה עלול להשתבש",
+        "מה לא בטוח",
+        "סיכונים"
+      ],
+      "covers": "what is unfinished, risky, or uncertain. If nothing, say so in a sentence and why."
+    },
+    {
+      "key": "decide",
+      "title": "מה להחליט",
+      "labels": [
+        "מה להחליט",
+        "מה צריך להחליט",
+        "מה לעשות עכשיו",
+        "מה עכשיו",
+        "מה הלאה",
+        "הצעד הבא",
+        "השלב הבא",
+        "הצעדים הבאים"
+      ],
+      "covers": "what the user should decide, approve, or do now."
+    }
+  ],
+  "jargon": [
+    {
+      "terms": [
+        "commit",
+        "commits",
+        "קומיט",
+        "קומיטים"
+      ],
+      "plain": "שמירת גרסה"
+    },
+    {
+      "terms": [
+        "push",
+        "פוש"
+      ],
+      "plain": "העלאה לשרת שבו הקוד שמור"
+    },
+    {
+      "terms": [
+        "merge",
+        "מרג'",
+        "מרג׳"
+      ],
+      "plain": "איחוד שינויים"
+    },
+    {
+      "terms": [
+        "deploy",
+        "deployment",
+        "דיפלוי"
+      ],
+      "plain": "העלאה לאוויר"
+    },
+    {
+      "terms": [
+        "branch",
+        "בראנץ'",
+        "בראנץ׳"
+      ],
+      "plain": "עותק עבודה נפרד"
+    },
+    {
+      "terms": [
+        "repo",
+        "repository",
+        "ריפו"
+      ],
+      "plain": "תיקיית הפרויקט"
+    },
+    {
+      "terms": [
+        "refactor",
+        "refactoring",
+        "ריפקטור"
+      ],
+      "plain": "סידור מחדש של הקוד"
+    },
+    {
+      "terms": [
+        "bug",
+        "bugs",
+        "באג",
+        "באגים"
+      ],
+      "plain": "תקלה"
+    },
+    {
+      "terms": [
+        "hook",
+        "hooks",
+        "הוק",
+        "הוקים"
+      ],
+      "plain": "בדיקה אוטומטית שרצה מעצמה"
+    },
+    {
+      "terms": [
+        "API",
+        "endpoint"
+      ],
+      "plain": "ממשק שדרכו תוכנות מדברות"
+    },
+    {
+      "terms": [
+        "frontend",
+        "פרונטאנד"
+      ],
+      "plain": "החלק שהמשתמש רואה"
+    },
+    {
+      "terms": [
+        "backend",
+        "בקאנד"
+      ],
+      "plain": "החלק שרץ בשרת"
+    },
+    {
+      "terms": [
+        "UI"
+      ],
+      "plain": "המסך או הממשק"
+    },
+    {
+      "terms": [
+        "CLI"
+      ],
+      "plain": "שורת הפקודה"
+    },
+    {
+      "terms": [
+        "regex",
+        "רג'קס"
+      ],
+      "plain": "תבנית חיפוש"
+    },
+    {
+      "terms": [
+        "cache",
+        "קאש"
+      ],
+      "plain": "זיכרון זמני"
+    },
+    {
+      "terms": [
+        "config",
+        "קונפיג"
+      ],
+      "plain": "הגדרות"
+    },
+    {
+      "terms": [
+        "dependency",
+        "dependencies"
+      ],
+      "plain": "ספריות שהפרויקט צריך"
+    },
+    {
+      "terms": [
+        "PR",
+        "pull request"
+      ],
+      "plain": "בקשה לאיחוד שינויים"
+    },
+    {
+      "terms": [
+        "lint",
+        "linter"
+      ],
+      "plain": "בדיקת סגנון של הקוד"
+    },
+    {
+      "terms": [
+        "schema",
+        "סכמה"
+      ],
+      "plain": "מבנה הנתונים"
+    },
+    {
+      "terms": [
+        "fallback"
+      ],
+      "plain": "חלופה"
+    },
+    {
+      "terms": [
+        "timeout"
+      ],
+      "plain": "זמן המתנה מרבי"
+    },
+    {
+      "terms": [
+        "regression"
+      ],
+      "plain": "תקלה שחזרה"
+    },
+    {
+      "terms": [
+        "staging"
+      ],
+      "plain": "סביבת ניסוי"
+    },
+    {
+      "terms": [
+        "production",
+        "prod"
+      ],
+      "plain": "האתר החי"
+    },
+    {
+      "terms": [
+        "transcript"
+      ],
+      "plain": "תיעוד השיחה"
+    },
+    {
+      "terms": [
+        "script",
+        "סקריפט",
+        "סקריפטים"
+      ],
+      "plain": "תוכנית קטנה"
+    },
+    {
+      "terms": [
+        "parser",
+        "parse",
+        "parsing"
+      ],
+      "plain": "פענוח"
+    },
+    {
+      "terms": [
+        "stdin",
+        "stdout",
+        "stderr"
+      ],
+      "plain": "קלט ופלט של תוכנה"
+    }
+  ],
+  "patterns": {
+    "testWords": "בדיק|עבר|נכשל|test|pass|fail|✓|✗|ok\\b",
+    "testCounts": "(?<![\\d/.])(\\d{1,5})\\s+(?:tests?|checks?|בדיקות)\\b",
+    "resultCounts": "(?<![\\d/.–-])(\\d{1,5})\\s+(?:passed|failed|עברו|נכשלו)\\b",
+    "notACountBefore": "(?:task|step|phase|משימ|שלב)\\S*\\s*$",
+    "failureReported": "(?<!\\d)[1-9]\\d{0,4}\\s+(?:[^\\s.\\d]+\\s+){0,2}?(?:נכשל|failed|failing|failures?)|(?:failed|נכשלו)\\s*[:=]\\s*[1-9]|לא\\s+(?:בדקתי|נבדק|נבדקו|הצלחתי|הרצתי)|דילגתי|\\bskipped\\b",
+    "failureMentioned": "נכשל|לא\\s+נבדק|לא\\s+בדקתי|לא\\s+הצלחתי|דילג|לא\\s+עבד|לא\\s+עובד|תקלה|שגיאה|בעיה|failed",
+    "checkExplained": "(?:פתחתי|לחצתי|ניסיתי|הפעלתי|השוויתי|הקלדתי|שלחתי|צילמתי|נכנסתי|גללתי)|(?:(?:בדק|בודק|בדיק|וידא|ווידא|מוודא|הרצתי|אימתי|מאמת)[א-ת]*[^.\\n]{0,60}?(?:\\sש[א-ת]|\\sאם\\s|\\sכדי\\s|\\sאיך\\s|:))|(?:לא\\s+בדקתי|לא\\s+נבדק|לא\\s+הרצתי|אין\\s+מה\\s+לבדוק|לא\\s+היה\\s+מה\\s+לבדוק|אי\\s+אפשר\\s+לבדוק|לא\\s+ניתן\\s+לבדוק)"
+  },
+  "thresholds": {
+    "minSectionChars": 380,
+    "charsPerChangedFile": 50,
+    "maxExtraFiles": 8,
+    "minSectionSentences": 5,
+    "minBeatChars": 50,
+    "maxRawNames": 6,
+    "maxSentenceWords": 25,
+    "trivialClosingChars": 200
+  }
+}

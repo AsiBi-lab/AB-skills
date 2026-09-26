@@ -1,0 +1,17 @@
+{
+  "description": "Requires a broad plain-language recap at the end of any session that changed files.",
+  "hooks": {
+    "Stop": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"${CLAUDE_PLUGIN_ROOT}/hooks/claude_stop_hook.py\"",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -16,6 +16,19 @@ cp -r skills/<name> .claude/skills/<name>
 
 Claude Code hot-reloads skills — no restart needed.
 
+## Plugins
+
+Add the marketplace once, then install any plugin from it:
+
+```
+/plugin marketplace add AsiBi-lab/AB-skills
+/plugin install <name>@ab-skills
+```
+
+| Plugin | What it does |
+|--------|---------------|
+| [plain-language-recap](plugins/plain-language-recap/README.md) | Every turn that changed files ends with a plain, complete recap you can read instead of the long message: what changed, how it was checked (with the real numbers), what is still open, what to decide. Jargon gets explained, failures are never dropped. Hebrew and English; Claude Code and Codex. |
+
 ## Skills
 
 | Skill | What it does |
