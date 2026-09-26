@@ -1,12 +1,18 @@
 {
   "name": "ab-skills",
-  "owner": { "name": "AsiBi-lab" },
+  "owner": {
+    "name": "Assaf Biton",
+    "url": "https://github.com/AsiBi-lab"
+  },
   "plugins": [
     {
       "name": "plain-language-recap",
       "source": "./plugins/plain-language-recap",
       "description": "Every turn that changed files ends with a plain, complete recap you can read instead of the long message — four bold parts, jargon explained, real test numbers and failures kept. Hebrew and English.",
-      "version": "2.0.0"
+      "version": "2.0.0",
+      "author": {
+        "name": "Assaf Biton"
+      }
     }
   ]
 }

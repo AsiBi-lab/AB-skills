@@ -179,4 +179,4 @@ decision — so it is worth enforcing rather than hoping for.
 
 ## License
 
-MIT — see [LICENSE](../../LICENSE). Built by [@AsiBi-lab](https://github.com/AsiBi-lab).
+MIT — see [LICENSE](../../LICENSE). Created by **Assaf Biton** ([@AsiBi-lab](https://github.com/AsiBi-lab)).

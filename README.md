@@ -1,6 +1,6 @@
 # AB-skills
 
-A growing collection of [Claude Code](https://claude.com/claude-code) Agent Skills — built for real work, cleaned up, and shared here one at a time.
+A growing collection of [Claude Code](https://claude.com/claude-code) plugins and skills by **Assaf Biton** ([@AsiBi-lab](https://github.com/AsiBi-lab)) — built for real work, cleaned up, and shared here one at a time.
 
 ## Install
 
