@@ -1,0 +1,22 @@
+{
+  "name": "plain-language-recap",
+  "version": "2.0.0",
+  "description": "Stop hook that makes every turn which changed files end with a plain, complete recap the user can read instead of the long message: four bold parts (what changed, how it was checked, what is still open, what to decide), professional words replaced or explained, the real test numbers and failures kept. When the recap falls short it names the exact gap. Ships with Hebrew and English rulesets; any other language is a config file.",
+  "author": {
+    "name": "Assaf Biton",
+    "url": "https://github.com/AsiBi-lab"
+  },
+  "homepage": "https://github.com/AsiBi-lab/AB-skills/tree/main/plugins/plain-language-recap",
+  "license": "MIT",
+  "keywords": [
+    "communication",
+    "english",
+    "hebrew",
+    "hook",
+    "i18n",
+    "plain-language",
+    "recap",
+    "stop-hook",
+    "summary"
+  ]
+}

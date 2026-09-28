@@ -1,0 +1,277 @@
+{
+  "$comment": "Bundled English ruleset. Copy to ~/.claude/recap.config.json (or run scripts/use-language.sh) to customise without losing it on update.",
+  "language": {
+    "name": "English",
+    "script": "latin",
+    "minRatio": 0.5,
+    "minLetters": 40
+  },
+  "requireBoldHeadings": true,
+  "titles": [
+    "In plain words",
+    "In plain English",
+    "Plain-language summary"
+  ],
+  "beats": [
+    {
+      "key": "changed",
+      "title": "What changed",
+      "labels": [
+        "What changed",
+        "What I changed",
+        "What I did",
+        "What we did",
+        "What was done",
+        "What I found"
+      ],
+      "covers": "each important change on its own line: what changed, where, and why. Names are fine when you say what the thing does."
+    },
+    {
+      "key": "verified",
+      "title": "How I checked it",
+      "labels": [
+        "How I checked it",
+        "How I checked",
+        "What I checked",
+        "How it was checked",
+        "How I tested it",
+        "How I verified it"
+      ],
+      "covers": "what each check makes sure of, and the real numbers (how many ran, passed, failed). If nothing was checked, say so and why."
+    },
+    {
+      "key": "open",
+      "title": "What's still open",
+      "labels": [
+        "What's still open",
+        "What is still open",
+        "What's open",
+        "Still open",
+        "What could go wrong",
+        "What I'm unsure about",
+        "Risks"
+      ],
+      "covers": "what is unfinished, risky, or uncertain. If nothing, say so in a sentence and why."
+    },
+    {
+      "key": "decide",
+      "title": "What to decide",
+      "labels": [
+        "What to decide",
+        "What you need to decide",
+        "What now",
+        "Next steps",
+        "Next step",
+        "What's next"
+      ],
+      "covers": "what the user should decide, approve, or do now."
+    }
+  ],
+  "jargon": [
+    {
+      "terms": [
+        "commit",
+        "commits"
+      ],
+      "plain": "saved a version"
+    },
+    {
+      "terms": [
+        "push",
+        "pushed"
+      ],
+      "plain": "uploaded to where the code is stored"
+    },
+    {
+      "terms": [
+        "merge",
+        "merged"
+      ],
+      "plain": "combined the changes"
+    },
+    {
+      "terms": [
+        "deploy",
+        "deployed",
+        "deployment"
+      ],
+      "plain": "put it live"
+    },
+    {
+      "terms": [
+        "branch"
+      ],
+      "plain": "a separate working copy"
+    },
+    {
+      "terms": [
+        "repo",
+        "repository"
+      ],
+      "plain": "the project folder"
+    },
+    {
+      "terms": [
+        "refactor",
+        "refactored",
+        "refactoring"
+      ],
+      "plain": "reorganised the code"
+    },
+    {
+      "terms": [
+        "hook",
+        "hooks"
+      ],
+      "plain": "an automatic check that runs by itself"
+    },
+    {
+      "terms": [
+        "API",
+        "endpoint"
+      ],
+      "plain": "the way programs talk to each other"
+    },
+    {
+      "terms": [
+        "frontend"
+      ],
+      "plain": "the part people see"
+    },
+    {
+      "terms": [
+        "backend"
+      ],
+      "plain": "the part that runs on the server"
+    },
+    {
+      "terms": [
+        "UI"
+      ],
+      "plain": "the screen"
+    },
+    {
+      "terms": [
+        "CLI"
+      ],
+      "plain": "the command line"
+    },
+    {
+      "terms": [
+        "regex"
+      ],
+      "plain": "a search pattern"
+    },
+    {
+      "terms": [
+        "cache"
+      ],
+      "plain": "temporary memory"
+    },
+    {
+      "terms": [
+        "config"
+      ],
+      "plain": "settings"
+    },
+    {
+      "terms": [
+        "dependency",
+        "dependencies"
+      ],
+      "plain": "libraries the project needs"
+    },
+    {
+      "terms": [
+        "PR",
+        "pull request"
+      ],
+      "plain": "a request to combine changes"
+    },
+    {
+      "terms": [
+        "lint",
+        "linter"
+      ],
+      "plain": "a code-style check"
+    },
+    {
+      "terms": [
+        "schema"
+      ],
+      "plain": "the shape of the data"
+    },
+    {
+      "terms": [
+        "fallback"
+      ],
+      "plain": "a backup option"
+    },
+    {
+      "terms": [
+        "timeout"
+      ],
+      "plain": "the longest wait allowed"
+    },
+    {
+      "terms": [
+        "regression"
+      ],
+      "plain": "an old problem that came back"
+    },
+    {
+      "terms": [
+        "staging"
+      ],
+      "plain": "the test copy of the site"
+    },
+    {
+      "terms": [
+        "production",
+        "prod"
+      ],
+      "plain": "the live site"
+    },
+    {
+      "terms": [
+        "transcript"
+      ],
+      "plain": "the conversation log"
+    },
+    {
+      "terms": [
+        "parser",
+        "parse",
+        "parsing"
+      ],
+      "plain": "reading and understanding the data"
+    },
+    {
+      "terms": [
+        "stdin",
+        "stdout",
+        "stderr"
+      ],
+      "plain": "a program's input and output"
+    }
+  ],
+  "patterns": {
+    "testWords": "test|check|pass|fail|✓|✗|ok\\b",
+    "testCounts": "(?<![\\d/.])(\\d{1,5})\\s+(?:tests?|checks?)\\b",
+    "resultCounts": "(?<![\\d/.–-])(\\d{1,5})\\s+(?:passed|failed)\\b",
+    "notACountBefore": "(?:task|step|phase)\\S*\\s*$",
+    "failureReported": "(?<!\\d)[1-9]\\d{0,4}\\s+(?:[^\\s.\\d]+\\s+){0,2}?(?:failed|failing|failures?)|failed\\s*[:=]\\s*[1-9]|\\b(?:didn't|did not|couldn't|could not)\\s+(?:check|test|verify|run)\\b|\\bnot (?:checked|tested|verified)\\b|\\bskipped\\b",
+    "failureMentioned": "fail|not (?:checked|tested|verified)|didn't|did not|couldn't|skipp|broke|error|problem|issue",
+    "checkExplained": "\\b(?:checked|verified|confirmed|tested|ran|makes? sure|ensures?)\\b[^.\\n]{0,60}?\\b(?:that|whether|if|to make sure|to confirm)\\b|\\bmakes? sure\\b|\\bI (?:opened|clicked|tried|typed|loaded|visited|compared|signed in|scrolled)\\b|\\b(?:didn't|did not|couldn't|could not)\\s+(?:check|test|verify)|\\bnot (?:checked|tested|verified)\\b|\\bnothing to (?:check|test)\\b"
+  },
+  "thresholds": {
+    "minSectionChars": 380,
+    "charsPerChangedFile": 60,
+    "maxExtraFiles": 8,
+    "minSectionSentences": 5,
+    "minBeatChars": 50,
+    "maxRawNames": 6,
+    "maxSentenceWords": 25,
+    "trivialClosingChars": 200
+  }
+}
